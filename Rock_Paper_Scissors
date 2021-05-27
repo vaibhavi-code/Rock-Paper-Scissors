@@ -1,0 +1,95 @@
+# importing random library 
+
+import random
+
+print( 'Enter your Name' )
+
+print()
+
+Name = input()
+
+print( ( 'Hello {}! Hope you are fine. Lets play "Rock Paper Scissors" ' ).format( Name ) )
+
+print()
+
+
+# Choice of Player
+
+print( 'Enter a choice : Rock , Paper , Scissors' )
+
+print()
+
+Choice_Player = input()
+
+
+# Choice of Computer
+
+Options = [ 'Rock' , 'Paper' , 'Scissors' ]
+
+Choice_Computer = random.choice( Options )
+
+
+# Choices
+
+print( 'Choice of Player ' , Choice_Player )
+
+print()
+
+print( 'Choice of Computer ' , Choice_Computer )
+
+print()
+
+
+# Code 
+
+
+if ( Choice_Player == Choice_Computer ):
+
+    print( 'Friends' )
+
+
+# Player chooses Rock , Computer chooses either Scissors or Paper #
+
+elif ( Choice_Player == 'Rock' ):
+
+    if ( Choice_Computer == 'Scissors' ):
+
+        print( 'Rock smash Scissors! You Win!' )
+
+    else:
+
+        print( 'Paper covers Rock! You Lose!' )
+
+
+# Player chooses Scissors , Computer chooses either Rock or Paper #
+
+elif ( Choice_Player == 'Scissors' ):
+
+    if ( Choice_Computer == 'Paper' ):
+
+        print( 'Scissors cut Paper! You Win!' )
+
+    else:
+
+        print( 'Rock smash Scissors! You Lose!' )
+
+
+# Player chooses Paper , Computer chooses either Rock or Scissors #
+
+elif ( Choice_Player == 'Paper' ):
+
+    if ( Choice_Computer == 'Rock' ):
+
+        print( 'Paper covers Rock! You Win!' )
+
+    else:
+
+        print( 'Scissors cut Paper! You Lose!' )
+
+print()
+
+print( 'Game Ends! Try to play again :)' )
+
+
+
+
